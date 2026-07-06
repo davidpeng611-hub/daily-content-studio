@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>篮球快剪</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="toolbar">
+        <div>
+          <h1>篮球快剪</h1>
+          <p>按 S 标记开始，按 E 自动保存横屏片段。</p>
+        </div>
+        <label class="file-button">
+          选择比赛视频
+          <input id="videoFile" type="file" accept="video/*" />
+        </label>
+      </section>
+
+      <section class="workspace">
+        <div class="video-panel">
+          <video id="player" controls playsinline></video>
+          <div class="timeline-readout">
+            <span>起点 <strong id="startTime">00:00.000</strong></span>
+            <span>当前 <strong id="currentTime">00:00.000</strong></span>
+            <span>片段 <strong id="clipLength">0.0s</strong></span>
+          </div>
+        </div>
+
+        <aside class="control-panel">
+          <div class="primary-actions">
+            <button id="markStart" class="action-button">S 开始</button>
+            <button id="exportClip" class="action-button accent">E 结束并保存</button>
+          </div>
+
+          <div class="option-row">
+            <label>
+              <input id="verticalMode" type="checkbox" />
+              同时转成9:16竖屏
+            </label>
+            <p class="option-hint">默认导出原始横屏比例，速度最快。</p>
+          </div>
+
+          <div class="nudge-grid">
+            <button data-nudge="-5">-5秒</button>
+            <button data-nudge="-1">-1秒</button>
+            <button data-nudge="1">+1秒</button>
+            <button data-nudge="5">+5秒</button>
+          </div>
+
+          <div class="status-box" id="status">先选择一段比赛视频。</div>
+
+          <div class="result-box" id="result" hidden>
+            <a id="downloadLink" href="#" download>下载导出片段</a>
+            <p id="outputPath"></p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="clips-section">
+        <div class="section-heading">
+          <h2>已保存片段</h2>
+          <button id="refreshClips">刷新</button>
+        </div>
+        <div id="clipsGrid" class="clips-grid"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

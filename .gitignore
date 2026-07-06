@@ -1,0 +1,56 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets and local-only config
+.env
+.env.*
+**/.env
+**/.env.*
+**/notification.env
+**/local_config.json
+**/conf.py
+**/cookies/
+**/*cookie*
+**/*credential*
+**/*token*
+
+# Dependencies and virtual environments
+node_modules/
+**/node_modules/
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Generated media and bulky artifacts
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.wav
+*.mp3
+*.aiff
+*.webm
+*.zip
+*.tar
+*.gz
+
+# Generated output folders
+basketball-quick-cut/uploads/
+basketball-quick-cut/exports/
+social-auto-upload/logs/
+social-auto-upload/videos/
+social-auto-upload/db/
+sports-psychology-comic/daily_packages/
+sports-psychology-comic/__pycache__/
+platform-intelligence/daily_outputs/
+video_analysis_frames/
+video_qc/
+
+# Nested repository internals should not be vendored into the parent repo
+social-auto-upload/.git/
+sports-psychology-comic/.git/
+

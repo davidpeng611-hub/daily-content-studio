@@ -1,0 +1,138 @@
+{
+  "accounts": {
+    "douyin": {
+      "name": "彭sir在现场",
+      "role": "篮球实战分析、AI拆球、热点追踪、教练判断",
+      "primary_goal": "动作诊断、比赛分析、教练智能体线索"
+    },
+    "xiaohongshu": {
+      "name": "体育哲学/篮球成长号",
+      "role": "体育哲学、心理症状命名、普通人成长、低谷恢复",
+      "primary_goal": "收藏、共鸣评论、长期信任；不做篮球技战术、青训诊断、训练表",
+      "agent_source": "sports-psychology-comic/AGENTS.md"
+    },
+    "wechat_channels": {
+      "name": "视频号",
+      "role": "家长信任、青训判断、熟人转发",
+      "primary_goal": "家长咨询、孩子比赛诊断、训练规划"
+    }
+  },
+  "heygen": {
+    "mode": "avatar_video",
+    "default_voice_id": "445f0e52193a408aab733d873bdcb8ff",
+    "default_voice_name": "Luca",
+    "default_locale": "zh-CN",
+    "default_speed": 0.92,
+    "avatar_group_id": "9a1f9ea624444875beebda4b99cb7825",
+    "avatar_group_name": "Luca",
+    "preferred_scene": "背后是球衣背景，人物穿深色 polo 的数字人场景",
+    "allowed_scenes": [
+      "穿深色Polo衫的那位：背后是篮球球衣墙，桌面有战术板和话筒，适合犀利篮球观点、热点拆解、诊断转化。",
+      "战术板前的儒雅胡须：背后是篮球球衣墙，人物穿白色 polo，桌面有战术板和话筒，适合课程感、家长向、青训讲解。"
+    ],
+    "avatar_id": "ad60518edd284e64b1a662d6034f0362",
+    "template_id": "",
+    "resolution": "1080p",
+    "aspect_ratio": "9:16",
+    "captions": "off",
+    "background_music": "off",
+    "background": {
+      "type": "color",
+      "value": "#111111"
+    }
+  },
+  "post_process": {
+    "subtitle_default": "codex_ass_or_srt",
+    "ask_user_for_jianying_when": [
+      "needs voice clone refinement",
+      "needs manual subtitle styling",
+      "needs platform-native captions"
+    ],
+    "background_music_default": "none"
+  },
+  "publishing_windows": {
+    "douyin": ["12:10", "18:30", "21:30"],
+    "xiaohongshu": ["08:30", "12:30", "21:30"],
+    "wechat_channels": ["07:30", "12:20", "20:30"]
+  },
+  "daily_publish_standard": {
+    "douyin": {
+      "quota": 1,
+      "format": "篮球热点/实战判断/AI拆球",
+      "default_time": "21:30"
+    },
+    "xiaohongshu": {
+      "quota": 1,
+      "format": "体育哲学/心理症状命名/普通人成长",
+      "default_time": "21:30"
+    },
+    "wechat_channels": {
+      "quota": 1,
+      "format": "家长信任/青训判断/比赛诊断",
+      "default_time": "20:30"
+    }
+  },
+  "sports_philosophy_agent": {
+    "enabled_for": ["xiaohongshu"],
+    "source_files": [
+      "sports-psychology-comic/AGENTS.md",
+      "sports-psychology-comic/体育哲学工作流1.md",
+      "sports-psychology-comic/strategy/two_account_strategy.md",
+      "sports-psychology-comic/strategy/episode_04_onward_growth_model.md"
+    ],
+    "positioning": "体育隐喻版心理症状命名号",
+    "hard_boundaries": [
+      "不做赛事复盘",
+      "不做球员评价",
+      "不做战术教学",
+      "不做青训诊断",
+      "不承接比赛视频诊断 CTA"
+    ],
+    "required_structure": [
+      "0-3秒刺痛判断",
+      "体育场景或体育隐喻",
+      "至少两个普通人具体处境",
+      "一个心理学或认知概念",
+      "一个体育概念回扣",
+      "哲学判断和可执行小动作"
+    ],
+    "symptom_words": [
+      "休息羞耻",
+      "怕输型人格",
+      "硬撑型人格",
+      "人生替补期",
+      "心理恢复期",
+      "关系加时赛",
+      "慢热型人生",
+      "低水平重复"
+    ],
+    "fixed_tags": ["#体育哲学", "#心理学", "#普通人成长"]
+  },
+  "monetization_products": [
+    {
+      "name": "单次动作诊断",
+      "price": "19.9-99",
+      "cta": "评论「诊断」，发一段投篮/突破视频，我帮你找一个最大问题。"
+    },
+    {
+      "name": "孩子比赛视频诊断",
+      "price": "299-499",
+      "cta": "家长可以私信「比赛」，我帮你看孩子一场球里最该改的3个细节。"
+    },
+    {
+      "name": "体育哲学低谷恢复手册",
+      "price": "19.9-49",
+      "cta": "小红书只做体育哲学内容，留言「恢复」领取低谷恢复清单。"
+    },
+    {
+      "name": "教练智能体模板包",
+      "price": "299",
+      "cta": "教练想要训练课模板，私信「智能体」。"
+    },
+    {
+      "name": "机构版AI助教搭建",
+      "price": "1999-4999",
+      "cta": "青训机构想提高教练反馈效率，私信「助教」。"
+    }
+  ]
+}
