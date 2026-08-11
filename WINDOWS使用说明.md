@@ -147,3 +147,19 @@ git push
 
 提交前确认不要出现 `.mp4`、`.mp3`、`.png`、`.jpg`、`.env`、`cookie`、`local_config`。
 
+## 10. 体育哲学旧工作流
+
+`sports-psychology-comic` 是独立仓库，不在主仓库里硬打包。Windows 上需要旧的体育哲学生成器时，单独拉这个分支：
+
+```powershell
+cd D:\
+git clone -b sports-psychology-comic git@github.com:davidpeng611-hub/-.git sports-psychology-comic
+```
+
+如果 SSH 没配好，先用 HTTPS：
+
+```powershell
+git clone -b sports-psychology-comic https://github.com/davidpeng611-hub/-.git sports-psychology-comic
+```
+
+注意：这个仓库的 GitHub `main` 分支不是体育哲学工程，不要拉错分支。
