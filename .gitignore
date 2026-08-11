@@ -10,6 +10,8 @@
 **/.env.*
 **/notification.env
 **/local_config.json
+local/*
+!local/.gitkeep
 **/conf.py
 **/cookies/
 **/*cookie*

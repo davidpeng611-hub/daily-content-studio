@@ -1,0 +1,34 @@
+{
+  "workspace_root": "D:\\每日口播工作室",
+  "input_dir": "D:\\每日口播工作室\\input",
+  "output_dir": "D:\\每日口播工作室\\output",
+  "assets_dir": "D:\\每日口播工作室\\素材库",
+  "today_posts_dir": "D:\\每日口播工作室\\今日推文",
+  "local_dir": "D:\\每日口播工作室\\local",
+  "ffmpeg": "ffmpeg",
+  "python": "python",
+  "default_video": {
+    "xiaohongshu_animation": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "min_story_frames": 16,
+      "subtitle_punctuation": "remove"
+    },
+    "account_studio_1": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 24,
+      "heygen_only_clean_talking_head": true,
+      "safe_subtitles": true
+    }
+  },
+  "account_studio_1_hard_rules": {
+    "avatar_id": "ad60518edd284e64b1a662d6034f0362",
+    "voice_id": "445f0e52193a408aab733d873bdcb8ff",
+    "avatar_description": "本人深色 Polo 数字人模板",
+    "voice_description": "Luca",
+    "require_preview_if_changed": true
+  }
+}
+
