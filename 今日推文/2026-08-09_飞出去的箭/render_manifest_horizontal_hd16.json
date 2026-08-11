@@ -1,0 +1,41 @@
+{
+  "audio": "/Users/luca/Desktop/8月9日.mp3",
+  "duration_seconds": 84.53,
+  "output": "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/小红书_飞出去的箭_横版16镜头高清版.mp4",
+  "desktop_output": "/Users/luca/Desktop/小红书_飞出去的箭_横版16镜头高清版.mp4",
+  "format": "1920x1080 landscape, 16 independent HD frames",
+  "frames": [
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/01_archer_dawn.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/02_arrow_release.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/03_phone_anxiety.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/04_creator_laptop.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/05_after_game_bench.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/06_chasing_results.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/07_free_throw.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/08_breath_pause.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/09_process_detail.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/10_notebook_process.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/11_running_stride.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/12_defensive_recovery.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/13_phone_down.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/14_morning_action.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/15_symbolic_montage.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd16/16_sunrise_court.png"
+  ],
+  "caption_units": 23,
+  "subtitle_consistency": "caption Chinese text is an exact ordered split of the approved script",
+  "qc_frames": [
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_01s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_06s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_12s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_18s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_26s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_34s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_42s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_50s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_58s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_66s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_74s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd16/t_83s.jpg"
+  ]
+}

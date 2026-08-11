@@ -134,7 +134,9 @@ def choose_publish_times(rows, config):
 
 def make_hashtags(platform, trends):
     trend_text = " ".join(trends)
-    if platform == "douyin" and ("粤BA" in trend_text or "群众篮球" in trend_text or "真实比赛" in trend_text):
+    if platform == "douyin" and ("喀麦隆" in trend_text or "格鲁吉亚" in trend_text or "团结杯" in trend_text):
+        base = ["#篮球", "#国际团结杯", "#中国男篮", "#格鲁吉亚", "#篮球教学", "#AI拆球", "#彭sir在现场"]
+    elif platform == "douyin" and ("粤BA" in trend_text or "群众篮球" in trend_text or "真实比赛" in trend_text):
         base = ["#篮球", "#粤BA", "#群众篮球", "#篮球教学", "#AI拆球", "#彭sir在现场"]
     else:
         base = {
@@ -144,6 +146,8 @@ def make_hashtags(platform, trends):
         }[platform]
     if "日本" in trend_text and "生死战" not in trend_text and "输球后" not in trend_text:
         base.insert(1, "#中国男篮vs日本")
+    if "喀麦隆" in trend_text or "格鲁吉亚" in trend_text or "团结杯" in trend_text:
+        base.insert(1, "#国际团结杯")
     if "快攻" in trend_text:
         base.append("#快攻")
     if "挡拆" in trend_text:
@@ -153,6 +157,8 @@ def make_hashtags(platform, trends):
 
 def main_topic(trends):
     joined = " ".join(trends)
+    if "喀麦隆" in joined or "格鲁吉亚" in joined or "团结杯" in joined:
+        return "中国男篮大胜喀麦隆后迎战格鲁吉亚，真正该看的是赢球背后的提前量和下一场稳定性"
     if "粤BA" in joined or "群众篮球" in joined or "被看见" in joined or "真实比赛" in joined:
         return "粤BA半决赛打开群众篮球话题，真正值得讲的是普通人的比赛为什么也值得被看见"
     if "生死战" in joined or "输球后" in joined or "下一场" in joined or "重启" in joined:
@@ -166,6 +172,28 @@ def main_topic(trends):
 
 def build_script(topic, trends):
     joined = " ".join(trends)
+    if "喀麦隆" in joined or "格鲁吉亚" in joined or "团结杯" in joined:
+        return """开头：
+中国男篮113比79赢喀麦隆，别只看34分，也别急着喊复兴。
+
+正文：
+这场球真正有价值的，不是比分好看，而是三个细节：
+第一，球转得快，全队助攻多，说明大家不是拿球才想。
+第二，外线机会出来得早，很多投篮不是硬拔，是提前跑位带出来的。
+第三，12个人都有参与感，这比某一个人爆发更重要。
+
+但今晚打格鲁吉亚，考验会完全不同。
+强队不会让你轻松起速，也不会让你每次都舒服出手。
+
+普通球友和孩子比赛也一样。
+一场大胜最容易骗你，让你以为自己什么都会了。
+真正要复盘的是：机会是怎么提前创造出来的？被限制后，还能不能继续做正确选择？
+
+转化：
+所以我看比赛视频，不只看你进了几个球。
+我更看接球前、无球时、被防住后的三个反应。
+想让我帮你拆一段比赛，评论「诊断」。"""
+
     if "粤BA" in joined or "群众篮球" in joined or "被看见" in joined or "真实比赛" in joined:
         return """开头：
 很多人只盯国家队和职业比赛，但真正能让普通球友学到东西的，反而是这种群众篮球。
@@ -222,6 +250,40 @@ def build_script(topic, trends):
 
 def build_xhs_sports_philosophy_copy(trends, publish_time):
     joined = " ".join(trends)
+    if "台风" in joined or "延期" in joined or "红霞" in joined:
+        symptom = "人生替补期"
+        title = "计划被打断，不代表你输了"
+        body = """很多人最怕的，不是失败。
+是明明已经准备好了，结果突然被迫暂停。
+
+比赛会延期。
+面试会改期。
+项目会卡住。
+一段关系也可能突然没有回应。
+
+普通人最容易在这种时候怀疑自己：
+是不是我不够好，所以才一直轮不到我？
+
+但体育里有一种能力，叫等待比赛重新开始。
+真正成熟的人，不是在风雨里硬上场，
+而是在暂停期里保护状态、整理动作、保持节奏。
+
+你不是被淘汰了。
+你只是进入一段人生替补期。
+
+今天的小动作：
+把今天原本要做、但被打断的一件事，改成一个15分钟的保底动作。
+别证明自己很强，先证明自己还在场。"""
+        tags = "#体育哲学 #心理学 #普通人成长 #人生替补期 #计划被打断 #情绪恢复 #低谷期"
+        return symptom, f"""标题：
+{title}
+
+正文：
+{body}
+
+建议发布时间：{publish_time}
+{tags}"""
+
     if "粤BA" in joined or "群众篮球" in joined or "被看见" in joined or "真实比赛" in joined:
         symptom = "被看见焦虑"
         title = "普通人的比赛，也值得被看见"
@@ -361,6 +423,36 @@ def build_copy(topic, trends, times):
     xhs_tags = " ".join(make_hashtags("xiaohongshu", trends))
     wechat_tags = " ".join(make_hashtags("wechat_channels", trends))
     xhs_symptom, xhs_copy = build_xhs_sports_philosophy_copy(trends, times["xiaohongshu"])
+    if "喀麦隆" in joined or "格鲁吉亚" in joined or "团结杯" in joined:
+        return {
+            "douyin": f"""标题：
+赢喀麦隆别只看比分，今晚才是真检验
+
+正文：
+113比79当然值得高兴，但真正能拆给普通球友的，是提前量：提前跑位、提前传球、提前做选择。
+
+今晚打格鲁吉亚，如果对抗更强、节奏更慢，中国男篮还能不能继续把球转起来，这才是重点。
+
+评论「诊断」，发一段你的比赛视频，我帮你看接球前、无球时、被防住后的三个反应。
+
+建议发布时间：{times['douyin']}
+{douyin_tags}""",
+            "xiaohongshu": xhs_copy,
+            "wechat_channels": f"""标题：
+孩子大胜之后，家长更该看这一点
+
+正文：
+孩子赢球后，家长不要只夸得分。
+真正能持续进步的孩子，是大胜之后还知道复盘：机会怎么来的，队友怎么被带动，被限制后还能不能做正确选择。
+
+今晚中国男篮打格鲁吉亚，也是同一个道理。
+能赢弱一档对手不稀奇，强对抗下还能不能稳定执行，才是训练有没有用的证明。
+
+需要孩子比赛视频诊断，可以私信「比赛」。
+
+建议发布时间：{times['wechat_channels']}
+{wechat_tags} #中国男篮 #青训""",
+        }
     if "生死战" in joined or "输球后" in joined or "下一场" in joined or "重启" in joined:
         return {
             "douyin": f"""标题：

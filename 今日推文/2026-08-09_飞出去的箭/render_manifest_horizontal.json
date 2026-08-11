@@ -1,0 +1,22 @@
+{
+  "audio": "/Users/luca/Desktop/8月9日.mp3",
+  "duration_seconds": 84.53,
+  "output": "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/小红书_飞出去的箭_横版双语字幕版.mp4",
+  "desktop_output": "/Users/luca/Desktop/小红书_飞出去的箭_横版双语字幕版.mp4",
+  "storyboard": "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/高级动画故事板_12镜头.png",
+  "contact_sheet": "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/动画镜头总览.jpg",
+  "caption_units": 23,
+  "subtitle_consistency": "caption Chinese text is an exact ordered split of the approved script",
+  "qc_frames": [
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal/t_01s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal/t_08s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal/t_16s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal/t_31s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal/t_45s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal/t_58s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal/t_70s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal/t_83s.jpg"
+  ],
+  "format": "1920x1080 landscape",
+  "ass": "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/arrow_control_bilingual_horizontal.ass"
+}

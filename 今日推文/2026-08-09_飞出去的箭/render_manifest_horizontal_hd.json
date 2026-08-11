@@ -1,0 +1,27 @@
+{
+  "audio": "/Users/luca/Desktop/8月9日.mp3",
+  "duration_seconds": 84.53,
+  "output": "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/小红书_飞出去的箭_横版高清修正版.mp4",
+  "desktop_output": "/Users/luca/Desktop/小红书_飞出去的箭_横版高清修正版.mp4",
+  "format": "1920x1080 landscape, HD independent frames",
+  "frames": [
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd/01_archer_dawn.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd/02_phone_anxiety.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd/03_free_throw.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd/04_process_detail.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd/05_phone_down.png",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/frames_hd/06_sunrise_court.png"
+  ],
+  "caption_units": 23,
+  "subtitle_consistency": "caption Chinese text is an exact ordered split of the approved script",
+  "qc_frames": [
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd/t_01s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd/t_08s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd/t_16s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd/t_31s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd/t_45s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd/t_58s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd/t_70s.jpg",
+    "/Users/luca/Documents/每日口播工作室/今日推文/2026-08-09_飞出去的箭/qc_horizontal_hd/t_83s.jpg"
+  ]
+}
